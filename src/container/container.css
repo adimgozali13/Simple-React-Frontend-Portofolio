@@ -1,0 +1,252 @@
+body {
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/img-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url("../font/Poppins-Bold.otf");
+}
+@font-face {
+  font-family: PoppinsReg;
+  src: url("../font/Poppins-Regular.otf");
+}
+@font-face {
+  font-family: BebasNeue;
+  src: url("../font/BebasNeue-Regular.ttf");
+}
+.konten {
+  height: 65vh;
+}
+.bar-b {
+  background: transparent;
+  border: none;
+}
+
+.dsg {
+  color: white;
+  margin-top: 200px;
+}
+.dsg-a {
+  font-family: BebasNeue;
+  font-size: 180px;
+}
+.title {
+  font-family: BebasNeue;
+  color: white;
+}
+.dsg-b {
+  font-family: BebasNeue;
+  font-size: 20px;
+}
+.bg-black {
+  background-color: #050505;
+  width: 100%;
+  padding: 100px;
+  padding-bottom: 200px;
+}
+.ctn {
+  padding-top: 200px;
+}
+.ctn-a {
+  padding-top: 80px;
+}
+.about-a {
+  color: white;
+}
+.btn-works {
+  color: white;
+  background-color: #ff4c52;
+  margin-top: 20px;
+}
+.img img {
+  width: 600px;
+  margin-left: 100px;
+}
+.bg-transparent {
+  padding: 100px;
+}
+.box-card {
+  width: 250px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3px white;
+  margin-left: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.show {
+  display: block;
+}
+.hover {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: -225px;
+  left: -40px;
+  background-color: rgba(255, 208, 1, 0.87);
+  box-shadow: 0px 0px 3px white;
+  margin-left: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.sr {
+  margin-top: 100px;
+}
+.icon {
+  width: 50px;
+}
+.icon:hover {
+  animation: 1s rotate;
+}
+.cl {
+  font-family: BebasNeue;
+  color: white;
+  margin-top: 30px;
+}
+.lp {
+  color: white;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+.bar {
+  width: 30px;
+  display: none;
+  margin-top: 10px;
+  margin-left: 200px;
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    background-image: url("../assets/img-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .konten {
+    height: 400px;
+  }
+  .dsg {
+    color: white;
+    margin-top: 150px;
+  }
+  .dsg-a {
+    font-family: BebasNeue;
+    font-size: 70px;
+  }
+  .abc {
+    font-size: 13px;
+  }
+
+  .dsg-b {
+    font-family: BebasNeue;
+    font-size: 15px;
+  }
+  .bg-black {
+    background-color: #050505;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 80px;
+  }
+  .ctn {
+    padding-top: 40px;
+  }
+  .ctn-a {
+    padding-top: 40px;
+  }
+  .about-a {
+    color: white;
+  }
+  .btn-works {
+    color: white;
+    background-color: #ff4c52;
+    margin-top: 20px;
+  }
+  .img img {
+    margin-top: 80px;
+    width: 300px;
+    margin-left: 0px;
+  }
+  .bg-transparent {
+    padding: 30px;
+  }
+  .box-card {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 3px white;
+    margin-left: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    position: relative;
+    width: 25px;
+    top: -25px;
+    left: 90px;
+  }
+  .bar-b {
+    background: transparent;
+    border: none;
+  }
+  .right {
+    display: none;
+  }
+  .logo {
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+  }
+  .header {
+    padding: 0px;
+  }
+  .sr {
+    margin-top: 20px;
+  }
+  .bo-x {
+    margin-top: 30px;
+  }
+  .mobile {
+    background: #ff4c52;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 70%;
+    position: fixed;
+    height: 200vh;
+    animation: animate 0.5s;
+    z-index: 9999;
+  }
+  .mobile a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+}
+@keyframes animate {
+  0% {
+    position: relative;
+    left: -100px;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+  }
+}

@@ -1,0 +1,31 @@
+.header {
+  padding: 20px;
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url("../../font/Poppins-Bold.otf");
+}
+@font-face {
+  font-family: PoppinsReg;
+  src: url("../../font/Poppins-Regular.otf");
+}
+.logo {
+  font-family: PoppinsBold;
+  margin-left: 30px;
+  color: white;
+}
+.dot {
+  color: #e85659;
+}
+.right {
+  padding: 10px;
+}
+.right a {
+  font-family: PoppinsReg;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 420px) {
+}
