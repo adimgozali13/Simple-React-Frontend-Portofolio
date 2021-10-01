@@ -1,27 +1,58 @@
 import "./container.css";
 import reactDom from "react-dom";
 import React, { Component } from "react";
-import Licon from "./layers.png";
-import Aicon from "./atom.png";
-import Ticon from "./theme.png";
-import Wicon from "./www.png";
-import Bicon from "./bicycle.png";
+import Licon from "./laravel.png";
+import Picon from "./postgre.png";
+import Aicon from "./photoshop.png";
+import Ticon from "./react.png";
+import Wicon from "./mysql.png";
+import Bicon from "./bootstrap.png";
+import Cicon from "./ci.png";
+import Gicon from "./git.png";
 import Vector from "./vector.svg";
+import HeaderComponent from "../component/header/HeaderComponent";
+import Footer from "../component/footer/Footer";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import LoadingScreen from "react-loading-screen";
 
 class Container extends Component {
+  componentDidMount() {
+    Aos.init({
+      duration: 1000,
+    });
+  }
   render() {
     return (
       <div>
+        <HeaderComponent />
+        {/* 
+        <LoadingScreen
+          loading={true}
+          bgColor="#f1f1f1"
+          spinnerColor="#9ee5f8"
+          textColor="#676767"
+          logoSrc="/logo.png"
+          text="Here an introduction sentence (Optional)"
+        >
+          <div>Loadable content</div>
+        </LoadingScreen> */}
         <div className="konten">
           <center>
             <div className="dsg">
-              <label className="dsg-b">Web Developer | UI UX DESIGNER</label>
-              <h1 className="dsg-a">DESIGNING</h1>
-              <label className="abc">
-                I'm a Creative Designer and I make thinks work.
+              <label className="dsg-b" data-aos="fade-down">
+                Web Developer | UI UX DESIGNER
+              </label>
+              <h1 className="dsg-a" data-aos="fade-down">
+                Adim Gozali
+              </h1>
+              <label className="abc" data-aos="fade-down">
+                I'm a Web Developer and I make thinks work.
               </label>
               <br />
-              <label className="abc">Turning your dreams into reality.</label>
+              <label className="abc" data-aos="fade-down">
+                Turning your dreams into reality.
+              </label>
             </div>
           </center>
         </div>
@@ -29,8 +60,10 @@ class Container extends Component {
           <div className="container-fluid">
             <div className="ctn">
               <div className="row">
-                <div className="col-sm-6">
-                  <h1 className="title">About</h1>
+                <div className="col-sm-6" data-aos="fade-right">
+                  <h1 className="title" data-aos="fade-right">
+                    About
+                  </h1>
                   <label className="about-a col-sm-8">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Optio doloremque nisi nulla fugit quibusdam incidunt
@@ -42,7 +75,7 @@ class Container extends Component {
                     SEE OUR WORK
                   </a>
                 </div>
-                <div className="col-sm-6 img">
+                <div className="col-sm-6 img" data-aos="fade-left">
                   <img src={Vector} />
                 </div>
               </div>
@@ -53,8 +86,8 @@ class Container extends Component {
           <div className="container-fluid">
             <div className="ctn-a">
               <div className="row">
-                <div className="col-sm-6">
-                  <h1 className="title sr">Services</h1>
+                <div className="col-sm-6" data-aos="fade-right">
+                  <h1 className="title sr">Skills</h1>
                   <label className="about-a col-sm-8">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Optio doloremque nisi nulla
@@ -63,52 +96,60 @@ class Container extends Component {
                 </div>
                 <div className="col-sm-6">
                   <div className="row bo-x">
-                    <div className="box-card">
+                    <div className="box-card" data-aos="flip-left">
                       <img className="icon" src={Licon} />
-                      <h4 className="cl">INTERFACE DESIGN</h4>
+                      <h4 className="cl">LARAVEL</h4>
                       <p className="lp">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Optio doloremque nisi nulla
+                        <b className="bold">1 Years</b> of experience.
                       </p>
                     </div>
-                    <div className="box-card">
+                    <div className="box-card" data-aos="flip-left">
                       <img className="icon" src={Ticon} />
-                      <h4 className="cl">THEMES DEVELOPMENT</h4>
+                      <h4 className="cl">REACT JS</h4>
                       <p className="lp">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Optio doloremque nisi nulla
+                        <b className="bold">6 Month</b> of experience.
                       </p>
                     </div>
-                    <div className="box-card">
-                      <img className="icon" src={Licon} />
-                      <h4 className="cl">CONTENT MARKETING</h4>
+                    <div className="box-card" data-aos="flip-left">
+                      <img className="icon" src={Picon} />
+                      <h4 className="cl">POSTGRE SQL</h4>
                       <p className="lp">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Optio doloremque nisi nulla
+                        <b className="bold">6 Month</b> of experience.
                       </p>
                     </div>
-                    <div className="box-card">
+                    <div className="box-card" data-aos="flip-left">
                       <img className="icon" src={Wicon} />
-                      <h4 className="cl">WEBSITE DEVELOPMENT</h4>
+                      <h4 className="cl">MYSQL</h4>
                       <p className="lp">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Optio doloremque nisi nulla
+                        <b className="bold">4 Years</b> of experience.
                       </p>
                     </div>
-                    <div className="box-card">
+                    <div className="box-card" data-aos="flip-left">
                       <img className="icon" src={Bicon} />
-                      <h4 className="cl">RESPONSIVE DESIGN</h4>
+                      <h4 className="cl">BOOTSTRAP</h4>
                       <p className="lp">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Optio doloremque nisi nulla
+                        <b className="bold">4 Years</b> of experience.
                       </p>
                     </div>
-                    <div className="box-card">
+                    <div className="box-card" data-aos="flip-left">
                       <img className="icon" src={Aicon} />
-                      <h4 className="cl">FREE UPDATE</h4>
+                      <h4 className="cl">PHOTOSHOP</h4>
                       <p className="lp">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Optio doloremque nisi nulla
+                        <b className="bold">3 Years</b> of experience.
+                      </p>
+                    </div>
+                    <div className="box-card" data-aos="flip-left">
+                      <img className="icon" src={Cicon} />
+                      <h4 className="cl">CODEIGNITER 4</h4>
+                      <p className="lp">
+                        <b className="bold">2 Years</b> of experience.
+                      </p>
+                    </div>
+                    <div className="box-card" data-aos="flip-left">
+                      <img className="icon" src={Gicon} />
+                      <h4 className="cl">GIT</h4>
+                      <p className="lp">
+                        <b className="bold">1 Years</b> of experience.
                       </p>
                     </div>
                   </div>
@@ -130,61 +171,13 @@ class Container extends Component {
                   <br />
                 </div>
                 <div className="col-sm-6">
-                  <div className="row bo-x">
-                    <div className="box-card">
-                      <img className="icon" src={Licon} />
-                      <h4 className="cl">INTERFACE DESIGN</h4>
-                      <p className="lp">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Optio doloremque nisi nulla
-                      </p>
-                    </div>
-                    <div className="box-card">
-                      <img className="icon" src={Ticon} />
-                      <h4 className="cl">THEMES DEVELOPMENT</h4>
-                      <p className="lp">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Optio doloremque nisi nulla
-                      </p>
-                    </div>
-                    <div className="box-card">
-                      <img className="icon" src={Licon} />
-                      <h4 className="cl">CONTENT MARKETING</h4>
-                      <p className="lp">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Optio doloremque nisi nulla
-                      </p>
-                    </div>
-                    <div className="box-card">
-                      <img className="icon" src={Wicon} />
-                      <h4 className="cl">WEBSITE DEVELOPMENT</h4>
-                      <p className="lp">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Optio doloremque nisi nulla
-                      </p>
-                    </div>
-                    <div className="box-card">
-                      <img className="icon" src={Bicon} />
-                      <h4 className="cl">RESPONSIVE DESIGN</h4>
-                      <p className="lp">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Optio doloremque nisi nulla
-                      </p>
-                    </div>
-                    <div className="box-card">
-                      <img className="icon" src={Aicon} />
-                      <h4 className="cl">FREE UPDATE</h4>
-                      <p className="lp">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Optio doloremque nisi nulla
-                      </p>
-                    </div>
-                  </div>
+                  <div className="row bo-x"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

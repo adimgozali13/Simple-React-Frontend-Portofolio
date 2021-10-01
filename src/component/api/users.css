@@ -1,10 +1,10 @@
-.header {
-  background: black;
-}
-
 .u {
   padding-bottom: 100px;
 }
 .box {
   background: white;
+  min-height: 100vh;
+}
+.search-form {
+  float: right !important;
 }

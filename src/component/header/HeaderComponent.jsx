@@ -1,11 +1,27 @@
 import React from "react";
 import "./header.css";
 import Bar from "./menu.png";
+import Aos from "aos";
 
 class HeaderComponent extends React.Component {
-  state = {
-    barOn: false,
+  constructor(props) {
+    super(props);
+    this.state = {
+      barOn: false,
+      bgcolor: "header",
+    };
+  }
+  listenScrollEvent = (e) => {
+    if (window.scrollY > 400) {
+      this.setState({ bgcolor: "fixed" });
+    }
+    if (window.scrollY < 400) {
+      this.setState({ bgcolor: "header" });
+    }
   };
+  componentDidMount() {
+    window.addEventListener("scroll", this.listenScrollEvent);
+  }
 
   bars = () => {
     this.setState({
@@ -13,9 +29,9 @@ class HeaderComponent extends React.Component {
     });
   };
   render() {
-    console.log(this.state.barOn);
+    console.log(this.state.bgcolor);
     return (
-      <div className="container-fluid header">
+      <div className={this.state.bgcolor} data-aos="fade-down">
         {this.state.barOn ? (
           <div className="mobile">
             <a href="">Home</a>
@@ -32,7 +48,9 @@ class HeaderComponent extends React.Component {
           </div>
           <div className="col-sm-4">
             <div className="right">
-              <a href="">Home</a>
+              <a href="" className="active">
+                Home
+              </a>
               <a href="">About</a>
               <a href="">Services</a>
               <a href="">Portofolio</a>

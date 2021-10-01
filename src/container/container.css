@@ -54,7 +54,7 @@ body {
   padding-top: 200px;
 }
 .ctn-a {
-  padding-top: 80px;
+  padding-top: 10px;
 }
 .about-a {
   color: white;
@@ -73,7 +73,7 @@ body {
 }
 .box-card {
   width: 250px;
-  height: 250px;
+  height: 180px;
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 3px white;
   margin-left: 20px;
@@ -96,7 +96,9 @@ body {
   padding: 20px;
   margin-top: 20px;
 }
-
+.bold {
+  color: #fa6b6f;
+}
 .sr {
   margin-top: 100px;
 }
@@ -109,10 +111,11 @@ body {
 .cl {
   font-family: BebasNeue;
   color: white;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .lp {
   color: white;
+  font-size: 20px;
 }
 @keyframes rotate {
   0% {
@@ -179,7 +182,8 @@ body {
   }
   .img img {
     margin-top: 80px;
-    width: 300px;
+    width: 150px;
+    display: none;
     margin-left: 0px;
   }
   .bg-transparent {
@@ -187,7 +191,7 @@ body {
   }
   .box-card {
     width: 250px;
-    height: 250px;
+    height: 200px;
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 3px white;
     margin-left: 20px;
@@ -195,6 +199,7 @@ body {
     margin-top: 20px;
     cursor: pointer;
   }
+
   .bar {
     display: block;
     position: relative;
